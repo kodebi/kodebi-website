@@ -14,7 +14,10 @@ const CallToAction = () => {
           Bist du bereit ein paar Deiner Bücher zu verleihen? Oder möchtest du
           einfach nur ein bisschen stöbern?
         </h3>
-        <a style={{ color: "var(--bckgrnd-clr)" }} href="http://app.kodebi.de">
+        <a
+          style={{ color: "var(--bckgrnd-clr)" }}
+          href="http://dev.app.kodebi.de"
+        >
           <BounceBtn>Hier geht's lang</BounceBtn>
         </a>
       </Container>
@@ -67,8 +70,8 @@ const BounceBtn = styled.button`
   animation: ${bounce} 2s ease-in-out infinite;
 
   &:hover {
-    background: var(--fnt-clr);
-    border: 2px solid var(--fnt-clr);
+    background: var(--bckgrnd-clr-2);
+    border: 2px solid var(--bckgrnd-clr-2);
   }
 
   @media (min-width: 800px) {

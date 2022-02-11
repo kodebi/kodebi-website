@@ -72,7 +72,7 @@ const Navbar = () => {
                 style={{
                   color: "var(--bckgrnd-clr)",
                 }}
-                href="http://app.kodebi.de"
+                href="http://dev.app.kodebi.de"
               >
                 Login
               </a>
@@ -187,8 +187,8 @@ const ActionBtn = styled.button`
   transition: var(--trnstn);
 
   &:hover {
-    background: var(--fnt-clr);
-    border: 2px solid var(--fnt-clr);
+    background: var(--bckgrnd-clr-2);
+    border: 2px solid var(--bckgrnd-clr-2);
   }
 
   @media (min-width: 800px) {

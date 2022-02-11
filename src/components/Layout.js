@@ -17,12 +17,12 @@ const Layout = ({ children }) => {
 
 const GlobalStyle = css`
   :root {
-    --fnt-clr: #260101;
+    --fnt-clr: #242121;
     --fnt-sz: 0.875rem;
-    --bckgrnd-clr: #f2ead0;
+    --bckgrnd-clr: rgb(247, 247, 247);
+    --bckgrnd-clr-2: rgb(182, 182, 182);
     --brnd-clr: #d96c75;
     --sm-clr: #d9c6ba;
-    --clr-gry: #d6d6d6;
     --fnt-fmly: "Quicksand", sans-serif;
     --mn-shdw: 0 1px 5px rgba(0, 0, 0, 0.75);
     --bx-shdw: 1px 6px 6px -6px rgba(0, 0, 0, 0.75);
