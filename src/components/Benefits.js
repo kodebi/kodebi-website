@@ -21,7 +21,7 @@ const Benefits = () => {
             <Article data-sal="slide-right" data-sal-easing="ease">
               <h2>
                 Bereichere andere um Dich herum. Biete Deine alten Staubfänger
-                zum Verleih an.""
+                zum Verleih an.
               </h2>
               <BenefitContainer>
                 <GridItem>

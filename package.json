@@ -11,7 +11,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "yarn run develop",
+    "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
@@ -20,6 +20,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@fontsource/quicksand": "^4.5.1",
+    "@kodebi/libkodebi-ui": "^1.1.5",
     "animate.css": "^4.1.1",
     "gatsby": "^4.2.0",
     "gatsby-plugin-emotion": "^7.6.0",

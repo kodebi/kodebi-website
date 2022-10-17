@@ -5,6 +5,7 @@ import { keyframes } from "@emotion/react"
 import { StaticImage } from "gatsby-plugin-image"
 import { FaAngleDoubleDown } from "react-icons/fa"
 import { header } from "../utils/linksDB"
+import { Button } from "@kodebi/libkodebi-ui"
 
 const Hero = () => {
   return (
@@ -25,11 +26,8 @@ const Hero = () => {
               Finde neue spannende Bücher von Leuten aus deiner Nachbarschaft
             </h3>
           </HeroText>
-          <a
-            style={{ color: "var(--bckgrnd-clr)" }}
-            href="http://dev.app.kodebi.de"
-          >
-            <ActionBtn>Jetzt registrieren</ActionBtn>
+          <a href="https://app.kodebi.de">
+            <Button variant="signin" label="Jetzt registrieren" />
           </a>
           <StyledLink to={header[0].url}>
             <ScrollDownIcon>
@@ -68,27 +66,6 @@ const HeroText = styled.div`
   text-align: center;
   color: var(--bckgrnd-clr);
   margin-bottom: 1rem;
-`
-
-const ActionBtn = styled.button`
-  background: var(--brnd-clr);
-  border: 2px solid var(--brnd-clr);
-  border-radius: var(--brdr-rds);
-  color: var(--bckgrnd-clr);
-  cursor: pointer;
-  margin: 0.25rem 0;
-  padding: 0.25rem 0.5rem;
-  transition: var(--trnstn);
-
-  &:hover {
-    background: var(--bckgrnd-clr-2);
-    border: 2px solid var(--bckgrnd-clr-2);
-  }
-
-  @media (min-width: 800px) {
-    margin: 0.5rem 0;
-    padding: 0.5rem 1.25rem;
-  }
 `
 
 const jump = keyframes`

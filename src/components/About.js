@@ -2,6 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { FaHeart } from "react-icons/fa"
 
 const teamImageQuery = graphql`
   {
@@ -25,12 +26,11 @@ const About = () => {
       <Container data-sal="slide-up" data-sal-easing="ease">
         <Title>Unsere Vision</Title>
         <p>
-          Das Projekt "Kodebi" ist im Rahmen von{" "}
-          <a href="https://techlabs.org">TechLabs</a> entstanden. Wir wollen
-          einen barrierefreien Zugang zu Unterhaltung und Wissen schaffen und
-          einen regen Austausch unter den Menschen befeuern. Aus diesem Grund
-          arbeiten wir emsig an einer digitalen Plattform, die das Verleihen von
-          Büchern vereinfachen soll.
+          Das Projekt "Kodebi" kommt von <FaHeart style={{ color: "red" }} /> -
+          wir wollen einen barrierefreien Zugang zu Unterhaltung und Wissen
+          schaffen und einen regen Austausch unter den Menschen befeuern. Aus
+          diesem Grund arbeiten wir emsig an einer digitalen Plattform, die das
+          Verleihen von Büchern vereinfachen soll.
         </p>
       </Container>
       <TeamArea>

@@ -20,7 +20,7 @@ const Footer = () => {
         <FooterContainer>
           <FooterContent>
             <FooterWrapper>
-              <p>© 2021 Kodebi. All rights reserved</p>
+              <p>© 2022 Kodebi. All rights reserved</p>
               <FooterLinks>
                 {footerLinks.map(link => (
                   <FooterLink to={link.url} key={link.id}>

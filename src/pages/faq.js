@@ -2,8 +2,8 @@ import React from "react"
 import styled from "@emotion/styled"
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
-import ReturnTo from "../components/ReturnTo"
 import FaqTab from "../components/FaqTab"
+import ReturnTo from "../components/ReturnTo"
 import { faqDB } from "../utils/faqDB"
 
 const Faq = () => {

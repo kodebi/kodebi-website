@@ -22,7 +22,7 @@ const footerIcons = [
   {
     id: 2,
     icon: <FaGithub />,
-    url: "https://github.com/chrizzlekicks/buecherregal-landing-page",
+    url: "https://github.com/kodebi/kodebi-website",
   },
 ]
 

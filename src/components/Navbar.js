@@ -5,6 +5,7 @@ import logo from "../assets/images/kodebi_normal.svg"
 import logo_white from "../assets/images/kodebi_weiss.svg"
 import { header } from "../utils/linksDB"
 import { FaBook, FaBookOpen } from "react-icons/fa"
+import { Button } from "@kodebi/libkodebi-ui"
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false)
@@ -67,16 +68,17 @@ const Navbar = () => {
                 )
               })}
             </LinksContainer>
-            <ActionBtn>
-              <a
-                style={{
-                  color: "var(--bckgrnd-clr)",
-                }}
-                href="http://dev.app.kodebi.de"
-              >
-                Login
-              </a>
-            </ActionBtn>
+            <a
+              href="https://app.kodebi.de"
+              style={{ margin: "0", padding: "0" }}
+            >
+              <Button
+                variant="signin"
+                type="button"
+                margin="0"
+                label="Signin / Login"
+              />
+            </a>
           </NavMenu>
         </NavContent>
       </Nav>
@@ -152,6 +154,7 @@ const NavMenu = styled.div`
   @media (min-width: 800px) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: auto;
     flex: 1;
     margin-right: 0.5rem;
@@ -175,26 +178,6 @@ const LinksContainer = styled.ul`
 const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
-`
-
-const ActionBtn = styled.button`
-  background: var(--brnd-clr);
-  border: 2px solid var(--brnd-clr);
-  border-radius: var(--brdr-rds);
-  color: var(--bckgrnd-clr);
-  cursor: pointer;
-  margin: 0.25rem 0.5rem;
-  transition: var(--trnstn);
-
-  &:hover {
-    background: var(--bckgrnd-clr-2);
-    border: 2px solid var(--bckgrnd-clr-2);
-  }
-
-  @media (min-width: 800px) {
-    margin: 0.5rem 0;
-    padding: 0.25rem 1.25rem;
-  }
 `
 
 export default Navbar
