@@ -2,14 +2,17 @@ import React from "react"
 import styled from "@emotion/styled"
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
-import ReturnTo from "../components/ReturnTo"
 import FaqTab from "../components/FaqTab"
+import ReturnTo from "../components/ReturnTo"
+import { AppShell } from "@kodebi/libkodebi-ui"
 import { faqDB } from "../utils/faqDB"
+import FooterContainer from "../components/FooterContainer"
 
 const Faq = () => {
   return (
     <>
-      <Layout>
+      <AppShell>
+        <Layout />
         <Banner title="FAQ" />
         <ReturnTo title="zurück" />
         <Container>
@@ -17,7 +20,8 @@ const Faq = () => {
             return <FaqTab key={article.id} {...article} />
           })}
         </Container>
-      </Layout>
+        <FooterContainer />
+      </AppShell>
     </>
   )
 }

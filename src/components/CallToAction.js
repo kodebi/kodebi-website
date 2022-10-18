@@ -1,10 +1,11 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { keyframes } from "@emotion/react"
+import { Box } from "@kodebi/libkodebi-ui"
 
 const CallToAction = () => {
   return (
-    <CallToContainer>
+    <Box variant="center">
       <Container
         data-sal="slide-up"
         data-sal-delay="500"
@@ -14,26 +15,13 @@ const CallToAction = () => {
           Bist du bereit ein paar Deiner Bücher zu verleihen? Oder möchtest du
           einfach nur ein bisschen stöbern?
         </h3>
-        <a
-          style={{ color: "var(--bckgrnd-clr)" }}
-          href="http://dev.app.kodebi.de"
-        >
+        <a href="https://app.kodebi.de">
           <BounceBtn>Hier geht's lang</BounceBtn>
         </a>
       </Container>
-    </CallToContainer>
+    </Box>
   )
 }
-
-const CallToContainer = styled.section`
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-`
 
 const Container = styled.div`
   max-width: var(--mx-wdth);

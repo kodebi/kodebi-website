@@ -4,16 +4,20 @@ import Layout from "../components/Layout"
 import Banner from "../components/Banner"
 import ReturnTo from "../components/ReturnTo"
 import DataSecurity from "../components/DataSecurity"
+import { AppShell } from "@kodebi/libkodebi-ui"
+import FooterContainer from "../components/FooterContainer"
 
 const Security = () => {
   return (
-    <Layout>
+    <AppShell>
+      <Layout />
       <Banner title="Datenschutz" />
       <ReturnTo title="zurück" />
       <Container>
         <DataSecurity />
       </Container>
-    </Layout>
+      <FooterContainer />
+    </AppShell>
   )
 }
 

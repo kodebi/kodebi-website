@@ -21,7 +21,7 @@ const Benefits = () => {
             <Article data-sal="slide-right" data-sal-easing="ease">
               <h2>
                 Bereichere andere um Dich herum. Biete Deine alten Staubfänger
-                zum Verleih an.""
+                zum Verleih an.
               </h2>
               <BenefitContainer>
                 <GridItem>
@@ -44,7 +44,7 @@ const Benefits = () => {
                 </GridItem>
               </BenefitContainer>
             </Article>
-            <Article data-sal="slide-left" data-sal-easing="ease">
+            <Article data-sal="fade" data-sal-easing="ease">
               <StaticImage
                 src="../assets/images/undraw_Reading_re_29f8.svg"
                 alt="Reading"
@@ -61,7 +61,6 @@ const Benefits = () => {
 }
 
 const BenefitSection = styled.section`
-  width: 100%;
   height: auto;
   display: grid;
   place-items: center;

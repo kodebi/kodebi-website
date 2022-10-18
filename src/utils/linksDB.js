@@ -8,21 +8,19 @@ const header = [
 ]
 
 const footerLinks = [
-  { id: 1, text: "Impressum", url: "/imprint" },
-  { id: 2, text: "Datenschutz", url: "/security" },
-  { id: 3, text: "FAQ", url: "/faq" },
+  { to: "/imprint", children: "Impressum" },
+  { to: "/security", children: "Datenschutz" },
+  { to: "/faq", children: "FAQ" },
 ]
 
 const footerIcons = [
   {
-    id: 1,
-    icon: <FaInstagram />,
-    url: "https://www.instagram.com/kodebi_bookshare/",
+    href: "https://www.instagram.com/kodebi_bookshare/",
+    children: <FaInstagram />,
   },
   {
-    id: 2,
-    icon: <FaGithub />,
-    url: "https://github.com/chrizzlekicks/buecherregal-landing-page",
+    href: "https://github.com/kodebi/kodebi-website",
+    children: <FaGithub />,
   },
 ]
 
