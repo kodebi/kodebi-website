@@ -43,7 +43,7 @@ const HowTo = () => {
             <IconContainer>
               <FaBookReader />
             </IconContainer>
-            <h3>Mache es Dir doch gemütlich!</h3>
+            <h3>Mache es Dir damit gemütlich!</h3>
           </Card>
         </FlexItem>
       </FlexContainer>

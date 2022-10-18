@@ -4,16 +4,20 @@ import Layout from "../components/Layout"
 import Banner from "../components/Banner"
 import ImprintText from "../components/ImprintText"
 import ReturnTo from "../components/ReturnTo"
+import { AppShell } from "@kodebi/libkodebi-ui"
+import FooterContainer from "../components/FooterContainer"
 
 const Imprint = () => {
   return (
-    <Layout>
+    <AppShell>
+      <Layout />
       <Banner title="Impressum" />
       <ReturnTo title="zurück" />
       <Container>
         <ImprintText />
       </Container>
-    </Layout>
+      <FooterContainer />
+    </AppShell>
   )
 }
 

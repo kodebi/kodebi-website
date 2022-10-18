@@ -3,16 +3,9 @@ import { Global, css } from "@emotion/react"
 import "@fontsource/quicksand"
 import "@fontsource/quicksand/400.css"
 import "@fontsource/quicksand/700.css"
-import Footer from "../components/Footer"
 
-const Layout = ({ children }) => {
-  return (
-    <>
-      <Global styles={GlobalStyle} />
-      {children}
-      <Footer />
-    </>
-  )
+const Layout = () => {
+  return <Global styles={GlobalStyle} />
 }
 
 const GlobalStyle = css`
@@ -53,7 +46,7 @@ const GlobalStyle = css`
 
   body {
     font-family: var(--fnt-fmly);
-    background-color: var(--bckgrnd-clr);
+    background: var(--bckgrnd-clr);
     color: var(--fnt-clr);
     font-size: var(--fnt-sz);
     line-height: 1.5;

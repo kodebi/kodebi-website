@@ -44,7 +44,7 @@ const Benefits = () => {
                 </GridItem>
               </BenefitContainer>
             </Article>
-            <Article data-sal="slide-left" data-sal-easing="ease">
+            <Article data-sal="fade" data-sal-easing="ease">
               <StaticImage
                 src="../assets/images/undraw_Reading_re_29f8.svg"
                 alt="Reading"
@@ -61,7 +61,6 @@ const Benefits = () => {
 }
 
 const BenefitSection = styled.section`
-  width: 100%;
   height: auto;
   display: grid;
   place-items: center;

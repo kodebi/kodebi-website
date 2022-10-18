@@ -20,7 +20,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@fontsource/quicksand": "^4.5.1",
-    "@kodebi/libkodebi-ui": "^1.1.5",
+    "@kodebi/libkodebi-ui": "^1.1.6",
     "animate.css": "^4.1.1",
     "gatsby": "^4.2.0",
     "gatsby-plugin-emotion": "^7.6.0",

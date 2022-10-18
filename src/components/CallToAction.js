@@ -1,10 +1,11 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { keyframes } from "@emotion/react"
+import { Box } from "@kodebi/libkodebi-ui"
 
 const CallToAction = () => {
   return (
-    <CallToContainer>
+    <Box variant="center">
       <Container
         data-sal="slide-up"
         data-sal-delay="500"
@@ -18,19 +19,9 @@ const CallToAction = () => {
           <BounceBtn>Hier geht's lang</BounceBtn>
         </a>
       </Container>
-    </CallToContainer>
+    </Box>
   )
 }
-
-const CallToContainer = styled.section`
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-`
 
 const Container = styled.div`
   max-width: var(--mx-wdth);
